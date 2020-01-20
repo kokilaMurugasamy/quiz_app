@@ -27,7 +27,7 @@ $("#findRestaurants").on("click", function(event) {
         
             //second call to get the actual info that I want using Zomato ID
             var searchID = response.location_suggestions[0].id;
-            var queryURL = "https://developers.zomato.com/api/v2.1/search?entity_id=" + searchID;
+            var queryURL = "https://developers.zomato.com/api/v2.1/search?entity_id=" + searchID+"&entity_type=city";
             $.ajax({
                 url: queryURL,
                 method: "GET",
