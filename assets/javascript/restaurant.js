@@ -73,17 +73,6 @@ $("#findRestaurants").on("click", function(event) {
     };
 
 
-$("#findRestaurants").on("click", function(event) {
-
-    
-    event.preventDefault();
-    findRestaurants()
-
-
-    
-
-});
-
 });
 
 
