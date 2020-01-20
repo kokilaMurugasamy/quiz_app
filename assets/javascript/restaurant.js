@@ -5,6 +5,7 @@ $(document).ready(function () {
 
 $("#findRestaurants").on("click", function(event) {
     console.log("insideClick")
+    $("tbody").children().remove()
     event.preventDefault();
     // runds findRestaurants function
     findRestaurants();
